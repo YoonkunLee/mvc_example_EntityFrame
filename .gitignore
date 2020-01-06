@@ -1,5 +1,11 @@
-.vs/
+ .vs/
+# compiled source #
+################
 *.sln
 *.vcxproj
 *.filters
 *.csproj
+
+# Connect Data file #
+################
+login.cs
