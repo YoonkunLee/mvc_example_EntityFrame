@@ -1,0 +1,16 @@
+﻿.index0 {
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+.index1 {
+    float: left;
+    list-style-type: none;
+    text-align: left;
+    border-right: 2px solid white;
+}
+
+.index2 {
+    height: 100px;
+}

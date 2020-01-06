@@ -1,0 +1,11 @@
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.deps.json
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.runtimeconfig.json
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.runtimeconfig.dev.json
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.dll
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.csprojResolveAssemblyReference.cache
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.csproj.CoreCompileInputs.cache
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.AssemblyInfoInputs.cache
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.AssemblyInfo.cs
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.pdb
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.dll
+c:\users\yoonkun lee\source\repos\FinalFinal_mvc\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.pdb

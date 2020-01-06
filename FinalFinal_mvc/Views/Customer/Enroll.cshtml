@@ -1,0 +1,31 @@
+﻿@model FinalFinal_mvc.Models.User
+@{
+    ViewData["Title"] = "Enroll";
+}
+
+<h2>Customer Enrollment Page</h2>
+
+<form class="form-horizontal" method="post" asp-controller="Customer" asp-action="Enroll">
+    <div class="form-group">
+        @*<label>Customer Name</label>
+        <input type="text" class="form-control" asp-for="UserName" placeholder="Enter Customer Name" />*@
+        @Html.LabelFor(m => m.UserName, "User Name")
+        @Html.TextBoxFor(m => m.UserName, new { placeholder = "Enter Customer Name", @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Customer Gender</label>
+        <input type="text" class="form-control" asp-for="Gender" placeholder="Enter Customer Gender" />
+    </div>
+    <div class="form-group">
+        <label>Customer Email</label>
+        <input type="text" class="form-control" asp-for="Email" placeholder="Enter Customer Email" />
+    </div>
+    <div class="form-group">
+        <label>Customer Date</label>
+        <input type="date" class="form-control" asp-for="Date" placeholder="Enter Customer Date" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn btn-primary">Submit</button>
+        <a class="btn btn-warning" href="#">Cancle</a>
+    </div>
+</form>

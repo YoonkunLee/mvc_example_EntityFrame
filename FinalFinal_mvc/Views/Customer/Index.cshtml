@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Enrolled Customer</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+        <tr>
+            <td>@user.id</td>
+            <td>@user.UserName</td>
+            <td>@user.Gender</td>
+            <td>@user.Email</td>
+            <td>@user.Date</td>
+            <td>
+                @*<form class="form-horizontal" method="post" asp-controller="Customer" >
+            <ul class="nav navbar-nav">
+                <li><a asp-area="" asp-controller="Customer" asp-action="Update(@user.id)" >Update</a></li>
+                <li><a asp-area="" asp-controller="Customer" asp-action="Delete" id=@user.id>Delete</a></li>
+            </ul>
+        </form>*@
+                @Html.ActionLink("Update", "Update", "Customer", new { @id = @user.id })
+                @Html.ActionLink("Delete", "Delete", "Customer", new { @id = @user.id })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
