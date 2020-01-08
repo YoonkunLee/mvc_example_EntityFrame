@@ -10,13 +10,17 @@ namespace FinalFinal_mvc.Models
     {
         [Key]
         public int id { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Enter user name in this text box")]
         public string UserName { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Enter Gender in this text box")]
         public string Gender { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Enter user email in this text box")]
         public string Email { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Select date or input date")]
         public string Date { get; set; }
     }
 }
