@@ -11,25 +11,33 @@
             <input type="text" class="form-control" asp-for="UserName" placeholder="Enter Customer Name" />*@
         @Html.LabelFor(m => m.UserName, "User Name")
         @Html.TextBoxFor(m => m.UserName, new { placeholder = "Enter Customer Name", @class = "form-control" })
-        <span class="text-danger" asp-validation-for="UserName"></span>
+        <span class="text-danger" asp-validation-for="@Model.UserName"></span>
     </div>
     <div class="form-group">
-        <label>Customer Gender</label>
+        @*<label>Customer Gender</label>
         <input type="text" class="form-control" asp-for="Gender" placeholder="Enter Customer Gender" />
-        <span class="text-danger" asp-validation-for="Gender"></span>
+        <span class="text-danger" asp-validation-for="Gender"></span>*@
+        @Html.LabelFor(m => m.Gender, "Gender")
+        @Html.TextBoxFor(m=> m.Gender, "Gender", new { placeholder = "Enter Customer Gender", @class = "form-control" })
+        <span class="text-danger" asp-validation-for="@Model.Gender"></span>
     </div>
     <div class="form-group">
-        <label>Customer Email</label>
-        <input type="text" class="form-control" asp-for="Email" placeholder="Enter Customer Email" />
-        <span class="text-danger" asp-validation-for="Email"></span>
+        @*<label>Customer Email</label>
+            <input type="text" class="form-control" asp-for="Email" placeholder="Enter Customer Email" />
+            <span class="text-danger" asp-validation-for="Email"></span>*@
+        @Html.LabelFor(m => m.Email, "Email")
+        @Html.TextBoxFor(m => m.Email, "Email", new { placeholder = "Enter Customer Email", @class = "form-control"})
+        <span class="text-danger" asp-validation-for="@Model.Email"></span>
     </div>
     <div class="form-group">
-        <label>Customer Date</label>
+        @*<label>Customer Date</label>
         <input type="date" class="form-control" asp-for="Date" placeholder="Enter Customer Date" />
-        <span class="text-danger" asp-validation-for="Date"></span>
+        <span class="text-danger" asp-validation-for="Date"></span>*@
+        @Html.LabelFor(m=>m.Date, "Date")
+        @Html.TextBoxFor(m=>m.Date, "Date", new {Type ="date", @class = "form-control"})
     </div>
     <div class="form-group">
+        <a href='@Url.Action("ReDirectToIndex", "Customer")' class="btn btn-warning" role="button">Cancle</a>
         <button type="submit" class="btn btn btn-primary">Submit</button>
-        <a class="btn btn-warning" href="#">Cancle</a>
     </div>
 </form>

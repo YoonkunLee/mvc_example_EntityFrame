@@ -27,45 +27,33 @@ namespace FinalFinal_mvc.Controllers
                 //    }
                 //}
 
-                var femailUserNames = new List<string>();
-                foreach (var user in list)
-                {
-                    if (user.Gender == "F")
-                    {
-                        femailUserNames.Add(user.UserName);
-                    }
-                }
-                var females1 = list.Where(m => m.Gender.Equals("F")).Select(m => m.UserName).ToList();
+                //var femailUserNames = new List<string>();
+                //foreach (var user in list)
+                //{
+                //    if (user.Gender == "F")
+                //    {
+                //        femailUserNames.Add(user.UserName);
+                //    }
+                //}
+                //var females1 = list.Where(m => m.Gender.Equals("F")).Select(m => m.UserName).ToList();
 
-                var females2 = from user in list
-                              where user.Gender == "F"
-                              select user.UserName;
+                //var females2 = from user in list
+                //              where user.Gender == "F"
+                //              select user.UserName;
 
-                list.ForEach(m => m.Email = "");
-                list.ForEach(m => m.Email = string.Empty);
-                list.ForEach(m =>
-                {
-                    m.Email = "";
-                    m.Gender = "";
-                });
-
+                //list.ForEach(m => m.Email = "");
+                //list.ForEach(m => m.Email = string.Empty);
+                //list.ForEach(m =>
+                //{
+                //    m.Email = "";
+                //    m.Gender = "";
+                //});
 
 
                 return View(list);
             }
         }       
-        public IActionResult Update(int? Id)
-        {           
-            using (var db = new CustomerDbContext())
-            {
-                var user = db.Users.Find(Id);
-                if(user == null)
-                {
-                    return RedirectToAction("Enroll");
-                }
-                return View(user);
-            } 
-        }
+        
         public IActionResult Enroll()
         {
             return View();
@@ -81,25 +69,44 @@ namespace FinalFinal_mvc.Controllers
                     db.Users.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("Index", "Customer");
+                return ReDirectToIndex();
             }
             return View(model);
         }
-        [HttpPost]
-        public IActionResult Edit(User user)
+
+        public IActionResult Update(int? Id)
         {
-            if (ModelState.IsValid)
+            using (var db = new CustomerDbContext())
             {
-                using (var db = new CustomerDbContext())
+                var user = db.Users.Find(Id);
+                if (user == null)
                 {
-                    db.Users.Add(user);
-                    db.SaveChanges();
+                    return RedirectToAction("Enroll");
                 }
-                return RedirectToAction("Index", "Customer");
+                return View(user);
             }
-            return View(user);
         }
-        
+
+        [HttpPost]
+        public IActionResult Update(User user)
+        {
+            using (var db = new CustomerDbContext())
+            {
+                if (user == null)
+                {
+                    return RedirectToAction("Enroll");
+                }
+                if (ModelState.IsValid)
+                {
+                    db.Users.Update(user);
+                    db.SaveChanges();
+
+                    return ReDirectToIndex();
+                }
+                return View(user);
+            }
+        }
+
         public IActionResult Delete(int id)
         {
             using (CustomerDbContext db = new CustomerDbContext())
@@ -111,8 +118,13 @@ namespace FinalFinal_mvc.Controllers
                     db.SaveChanges();
                 }          
             }
-            return RedirectToAction("Index", "Customer");
+            return ReDirectToIndex();
 
+        }
+
+        public IActionResult ReDirectToIndex()
+        {
+            return RedirectToAction("Index", "Customer");
         }
     }
 }

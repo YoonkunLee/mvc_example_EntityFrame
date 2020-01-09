@@ -9,7 +9,7 @@
 {
     @Html.AntiForgeryToken()
 
-    <form class="form-horizontal" method="post" asp-controller="Customer" asp-action="Edit">
+    <form class="form-horizontal" method="post" asp-controller="Customer" asp-action="Update">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.id)
@@ -48,7 +48,8 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <a href='@Url.Action("ReDirectToIndex", "Customer")' class="btn btn-warning" role="button">Cancle</a>
+                <button type="submit" class="btn btn-primary">Save</button>
             </div>
         </div>
     </form>

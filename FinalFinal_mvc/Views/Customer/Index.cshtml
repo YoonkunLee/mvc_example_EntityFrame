@@ -31,8 +31,8 @@
                 <li><a asp-area="" asp-controller="Customer" asp-action="Delete" id=@user.id>Delete</a></li>
             </ul>
         </form>*@
-                @Html.ActionLink("Update", "Update", "Customer", new { @id = @user.id })
-                @Html.ActionLink("Delete", "Delete", "Customer", new { @id = @user.id })
+                @Html.ActionLink("Update", "Update", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })
+                @Html.ActionLink("Delete", "Delete", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })
             </td>
         </tr>
         }
