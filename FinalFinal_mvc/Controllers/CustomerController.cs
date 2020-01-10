@@ -69,7 +69,7 @@ namespace FinalFinal_mvc.Controllers
                     db.Users.Add(model);
                     db.SaveChanges();
                 }
-                return ReDirectToIndex();
+                return RedirectToAction("Success", "Customer", model);
             }
             return View(model);
         }
@@ -125,6 +125,11 @@ namespace FinalFinal_mvc.Controllers
         public IActionResult ReDirectToIndex()
         {
             return RedirectToAction("Index", "Customer");
+        }
+
+        public IActionResult Success(User user)
+        {
+            return View(user);
         }
     }
 }

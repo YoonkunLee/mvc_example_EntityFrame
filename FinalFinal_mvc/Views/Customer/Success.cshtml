@@ -1,0 +1,11 @@
+﻿@model FinalFinal_mvc.Models.User
+
+@{
+    ViewData["Title"] = "Success";
+}
+
+<h1>Your Customer @Html.DisplayFor(model => model.UserName) is successfully registered!!</h1>
+<h2>@Html.DisplayFor(model => model.UserName)'s ID number is @Html.DisplayFor(model => model.id)</h2>
+<div class="col-md-10">
+    <a href='@Url.Action("ReDirectToIndex", "Customer")' class="btn btn-primary" role="button">Confirm</a>
+</div>
