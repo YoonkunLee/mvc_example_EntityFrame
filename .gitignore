@@ -1,10 +1,4 @@
  .vs/
-# compiled source #
-################
-*.sln
-*.vcxproj
-*.csproj
-
 # Connect Data file #
 ################
 login.cs
