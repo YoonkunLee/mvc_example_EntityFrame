@@ -3,7 +3,6 @@
 ################
 *.sln
 *.vcxproj
-*.filters
 *.csproj
 
 # Connect Data file #
