@@ -42,3 +42,14 @@ C:\Users\Yoonkun Lee\Desktop\YK_Folder\mvc_example\FinalFinal_mvc\obj\Debug\netc
 C:\Users\Yoonkun Lee\Desktop\YK_Folder\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.AssemblyInfo.cs
 C:\Users\Yoonkun Lee\Desktop\YK_Folder\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.dll
 C:\Users\Yoonkun Lee\Desktop\YK_Folder\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.pdb
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.deps.json
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.runtimeconfig.json
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.runtimeconfig.dev.json
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.dll
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\bin\Debug\netcoreapp2.0\FinalFinal_mvc.pdb
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.csprojAssemblyReference.cache
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.csproj.CoreCompileInputs.cache
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.AssemblyInfoInputs.cache
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.AssemblyInfo.cs
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.dll
+C:\Users\Yoonkun Lee\Desktop\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.0\FinalFinal_mvc.pdb
