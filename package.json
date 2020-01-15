@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/YoonkunLee/mvc_example/issues"
   },
-  "homepage": "https://github.com/YoonkunLee/mvc_example#readme"
+  "homepage": "https://github.com/YoonkunLee/mvc_example#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.4"
+  }
 }

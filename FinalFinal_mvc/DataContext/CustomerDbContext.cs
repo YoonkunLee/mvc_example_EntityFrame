@@ -9,12 +9,12 @@ namespace FinalFinal_mvc.DataContext
 {
     public class CustomerDbContext : DbContext
     {
-        string log = LogIn.LogInfo;
+        //string log = LogIn.LogInfo;
         public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@log);
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=CustomerDb;User Id=sa;Password=1q2w3e4r;");
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FinalFinal_mvc.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,12 @@ namespace FinalFinal_mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddCors(options => options.AddPolicy("corsPolicy", builder =>
+            {
+                builder.AllowAnyMethod().AllowAnyHeader()
+                    .WithOrigins("")
+                    .AllowCredentials();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +46,12 @@ namespace FinalFinal_mvc
             }
 
             app.UseStaticFiles();
-
+            app.UseCookiePolicy();
+            app.UseCors("CorsPolicy");
+            app.UseSignalR(route =>
+            {
+                route.MapHub<ChatHub>("/chatHub");
+            });
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
