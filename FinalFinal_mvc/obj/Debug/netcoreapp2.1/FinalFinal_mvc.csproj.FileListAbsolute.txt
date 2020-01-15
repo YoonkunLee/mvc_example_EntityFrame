@@ -1,0 +1,8 @@
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.csprojAssemblyReference.cache
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.csproj.CoreCompileInputs.cache
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.RazorAssemblyInfo.cache
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.RazorAssemblyInfo.cs
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.AssemblyInfoInputs.cache
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.AssemblyInfo.cs
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.TagHelpers.input.cache
+C:\Users\Yoonkun Lee\Desktop\mvc\mvc_example\FinalFinal_mvc\obj\Debug\netcoreapp2.1\FinalFinal_mvc.TagHelpers.output.cache
