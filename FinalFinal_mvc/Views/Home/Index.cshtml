@@ -1,13 +1,25 @@
-﻿<div class="cont0">
-    <h1>Current Enrolled Customer</h1>
-    <div class="index2">
-        <ul class="index0">
-            <li class="index1">No</li>
-            <li class="index1">Name</li>
-            <li class="index1">Gender</li>
-            <li class="index1">Email</li>
-            <li class="index1">Date</li>
-            <li class="index1">Action</li>
-        </ul>
+﻿<script src="~/lib/signalr/signalr.js"></script>
+@{ 
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-lg-6">&nbsp;</div>
+            <div class="col-lg-6">
+                user:    <input  type="text" id="userInput"/>
+                <br />
+                Message: <input type="text" id="messageInput" /><br />
+                <input type ="button" id="sendButton" value="SendMessage" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">&nbsp;</div>
+        <div class="col-lg-6">
+            <ul id="messagesList"></ul>
+        </div>
     </div>
 </div>

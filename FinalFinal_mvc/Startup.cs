@@ -23,6 +23,7 @@ namespace FinalFinal_mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSignalR();
             services.AddCors(options => options.AddPolicy("corsPolicy", builder =>
             {
                 builder.AllowAnyMethod().AllowAnyHeader()
