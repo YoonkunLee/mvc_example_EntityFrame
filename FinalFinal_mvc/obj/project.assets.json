@@ -13870,11 +13870,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoonkun Lee\\Desktop\\cc\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
+      "projectUniqueName": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
       "projectName": "FinalFinal_mvc",
-      "projectPath": "C:\\Users\\Yoonkun Lee\\Desktop\\cc\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
+      "projectPath": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
       "packagesPath": "C:\\Users\\Yoonkun Lee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoonkun Lee\\Desktop\\cc\\mvc_example\\FinalFinal_mvc\\obj\\",
+      "outputPath": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
