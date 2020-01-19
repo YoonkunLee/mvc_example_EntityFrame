@@ -14,7 +14,7 @@ namespace FinalFinal_mvc.DataContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@log);
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=CustomerDb;User Id=sa;Password=1q2w3e4r;");
         }
     }
 }
